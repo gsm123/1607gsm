@@ -1,0 +1,235 @@
+.swiper-container {
+    width: 100%;
+    height: 100%;
+   
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    height:100%;
+    width:100%;
+    /* Center slide text vertically */
+    
+    position: relative;
+    
+}
+
+.swiper-slide1{
+     background:url(../img/9.jpg) -680px 0px no-repeat; 
+}
+.swiper-slide1 h1{
+   font-size: 70px;
+   text-align: center;
+   line-height: 100px;
+   color: #FABA7C;
+}
+.swiper-slide2 p{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin-left: 100px;
+    width:180px;
+    height:180px;
+    border-radius:100px;
+    overflow:hidden;
+}
+.swiper-slide2 h3{
+    color: #FC5711;
+    font-size: 20px;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    background:rgba(255,153,0,0.4);
+     text-align: center;
+     line-height: 40px;
+     position: absolute;
+     left: 50%;
+     top: 40%;
+     margin-left: -100px;
+}
+.swiper-slide2 .name{
+    margin-top: -20px;
+}
+.swiper-slide2 .sex{
+    margin-top: 40px;
+}
+.swiper-slide2 .age{
+    margin-top:100px;
+}
+.swiper-slide2 .ai{
+    margin-top: 160px;
+}
+.swiper-slide2{
+     position: relative;
+     padding-top:20px;
+     background:url(../img/9.jpg) -670px 0 no-repeat; 
+}
+.swiper-slide3{
+     padding-top:20px;
+     background:url(../img/9.jpg) -760px 0 no-repeat; 
+
+}
+.swiper-slide3 h1{
+    color: #8481FF;
+}
+
+.swiper-slide3 p{
+   
+    padding: 10px;
+
+    margin-top: 40px;
+    background:rgba(255,153,0,0.4);
+    border-radius: 10px;
+    color: #FC5711;
+
+}
+.swiper-slide4{
+    text-align: center;
+     padding-top:20px;
+     padding-left:4px;
+     background:url(../img/9.jpg) -760px 0 no-repeat; 
+}
+.swiper-slide4 #so{
+    width: 80%;
+    height: 140px;
+    margin-top: 10px;
+
+}
+.swiper-slide4 #so .st{
+    border-style: solid;
+    border-width: 20px;
+    height: 0;
+    width: 0;
+    border-color:transparent transparent #FF9900 transparent ;
+    opacity: 0.3;
+}
+.swiper-slide4 #so .sx1{
+    width: 80%;
+    height: 120px;
+    padding-left: 8px;
+    background:rgba(255,153,0,0.4);
+}
+.swiper-slide4 h1{
+    color: #8481FF;
+
+}
+.swiper-slide4 p{
+    text-align: left;
+   
+    color: #FC5711;
+
+}
+.swiper-slide5 h1{
+    text-align: center;
+    color: #8481FF;
+
+}
+.swiper-slide5 b{
+    display: block;
+    color: #FC5711;
+
+}
+.swiper-slide5{
+    position: relative;
+    text-align: left;
+     padding-top:20px;
+     background:url(../img/9.jpg) -760px 0 no-repeat; 
+}
+
+.swiper-slide5 #so{
+    width: 80%;
+    height: 280px;
+    margin-top: 10px;
+}
+.swiper-slide5 #so .st{
+    border-style: solid;
+    border-width: 20px;
+    height: 0;
+    width: 0;
+    border-color:transparent transparent #FF9900 transparent ;
+    opacity: 0.3;
+}
+.swiper-slide5 #so .sx1{
+    width: 80%;
+    height: 260px;
+    background:rgba(255,153,0,0.3);
+}
+
+
+#enter{
+    position: absolute;
+    left: 50%;
+    top:63%;
+    margin-left: -40px;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: red;
+    border: 1px solid red;
+   
+}
+
+#sbox{
+    position: absolute;
+    z-index: 999;
+    bottom: 5px;
+    right: 0px;
+    width: 160px;
+    height: 280px;
+    animation-name: myan;
+    animation-duration: 0.7s;
+    animation-timing-function: step-end;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+
+    /*animation:myan 0.6s step-end infinite running;*/      
+    
+}
+
+@keyframes myan{
+    0%{
+        background: url(../img/charector.png) no-repeat;
+    }
+    14%{
+        background: url(../img/charector.png) no-repeat  -180px 0;
+    }
+    28%{
+        background: url(../img/charector.png) no-repeat  -360px 0;
+    }
+    42%{
+        background: url(../img/charector.png) no-repeat  -540px 0;
+    }
+    56%{
+        background: url(../img/charector.png) no-repeat  -720px 0;
+    }
+    70%{
+        background: url(../img/charector.png) no-repeat  -900px 0;
+    }
+    84%{
+        background: url(../img/charector.png) no-repeat  -1080px 0;
+    }
+    70%{
+        background: url(../img/charector.png) no-repeat  -900px 0;
+    }
+    42%{
+        background: url(../img/charector.png) no-repeat  -540px 0;
+    }
+    28%{
+        background: url(../img/charector.png) no-repeat  -360px 0;
+    }
+    14%{
+        background: url(../img/charector.png) no-repeat  -180px 0;
+    }
+    0%{
+        background: url(../img/charector.png) no-repeat;
+    }
+    
+    
+}
+
