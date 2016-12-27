@@ -11,7 +11,7 @@ var IScroll = require('./common/libs/iscroll/iscroll.js');
 
 $("#first .swiper-container").show();
 $("#mainContainer").hide();
-
+ var arr=[];
 var swiper = new Swiper('#first .swiper-container',{
   onInit: function(swiper){ 
     swiperAni.swiperAnimateCache(swiper); 
@@ -40,7 +40,7 @@ $("#enter").click(function(){
     var kg={
     	'name':true
     }
-    var arr=[];
+   
     arr.push(kg);
     localStorage.user=JSON.stringify(arr);  
 	
@@ -69,7 +69,7 @@ $.post('http://localhost:8000/skill',function(data){
 		var str='';
 		for (var i = 0; i <datalength; i++) {
 			str+='<li style="background:url(../img/1.jpg)">';
-            str+='<h3 class="oh3" style="width:40%; opacity:0; height:80%; transform:rotate(30deg); color:#8481FF; background:pink;">'+data[i].category+'</h3>';
+            str+='<h3 class="oh3" style="width:40%; opacity:0; height:80%; transform:rotate(30deg); color:#000; background:#BDC28C;">'+data[i].category+'</h3>';
             str+='<p class="op">'+data[i].name+'</p>'
             str+='<p class="op">'+data[i].time+'</p>'
             str+='<p class="op">'+data[i].level+'</p>'
@@ -95,8 +95,9 @@ $.post('http://localhost:8000/skill',function(data){
             $('.op').animate({
             	position:'relative',
             	zIndex:3,
-            	fontSize:18,
-            	color:'#8481FF'
+            	fontSize:16,
+            	color:'#000',
+            	
             },400)
 	    })
    	},400);
@@ -130,10 +131,10 @@ $.post('http://localhost:8000/skill',function(data){
 				str+='<li>'+data[i].image+'</li>';
 				str+='<li>'+data[i].time+'</li>';
 				str+='<li>'+data[i].posts+'</li>';
-				str+='<li>'+data[i].time+'</li>';
-				str+='<li>'+data[i].posts+'</li>';
-				str+='<li>'+data[i].time+'</li>';
-				str+='<li>'+data[i].posts+'</li>';
+				str+='<li>'+data[i].time1+'</li>';
+				str+='<li>'+data[i].posts1+'</li>';
+				str+='<li>'+data[i].time2+'</li>';
+				str+='<li>'+data[i].posts2+'</li>';
 			}
 		$('.title').append(str);
 		var myScroll;
